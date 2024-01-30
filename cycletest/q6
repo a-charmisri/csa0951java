@@ -1,0 +1,23 @@
+public class ElementExistsInArray {
+    public static void main(String[] args) {
+        // Sample array
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        // Element to be checked
+        int targetElement = 3;
+
+        // Check if the element exists in the array
+        boolean exists = doesElementExist(numbers, targetElement);
+
+        // Display the result
+        if (exists) {
+            System.out.println(targetElement + " exists in the array.");
+        } else {
+            System.out.println(targetElement + " does not exist in the array.");
+        }
+    }
+
+    // Method to check if an element exists in an array
+    static boolean doesElementExist(int[] array, int target) {
+        for (int element : array) {
+            if (elem
