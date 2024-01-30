@@ -1,0 +1,21 @@
+public class AnonymousArrayExample {
+    public static void main(String[] args) {
+        // Creating an anonymous array of integers
+        int[] numbers = new int[]{1, 2, 3, 4, 5};
+
+        // Passing the anonymous array to a method
+        printArray(numbers);
+
+        // Using an anonymous array directly in a method call
+        printArray(new int[]{6, 7, 8, 9, 10});
+    }
+
+    // Method to print the elements of an array
+    static void printArray(int[] arr) {
+        System.out.print("Array elements: ");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+}
